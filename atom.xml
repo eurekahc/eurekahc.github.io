@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-05-27T07:42:30.238Z</updated>
+  <updated>2016-05-27T07:56:40.078Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>secondblog</title>
+    <title>图片引用测试</title>
     <link href="http://yoursite.com/2016/05/27/secondblog/"/>
     <id>http://yoursite.com/2016/05/27/secondblog/</id>
     <published>2016-05-27T07:39:25.000Z</published>
-    <updated>2016-05-27T07:42:30.238Z</updated>
+    <updated>2016-05-27T07:56:40.078Z</updated>
     
     <content type="html">&lt;p&gt;&lt;img src=&quot;/images/10DLT-CNN.jpg “来自: http://stats.stackexchange.com/questions/146413”&quot; alt=&quot;CNN&quot;&gt;&lt;/p&gt;
 </content>
@@ -40,10 +40,9 @@
     <link href="http://yoursite.com/2016/05/27/%E5%8D%81%E4%B8%AA%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E6%A6%82%E5%BF%B5/"/>
     <id>http://yoursite.com/2016/05/27/十个深度学习概念/</id>
     <published>2016-05-27T06:51:16.000Z</published>
-    <updated>2016-05-27T07:34:38.141Z</updated>
+    <updated>2016-05-27T07:56:36.437Z</updated>
     
-    <content type="html">&lt;h1 id=&quot;十个深度学习概念&quot;&gt;&lt;a href=&quot;#十个深度学习概念&quot; class=&quot;headerlink&quot; title=&quot;十个深度学习概念&quot;&gt;&lt;/a&gt;十个深度学习概念&lt;/h1&gt;&lt;p&gt;@(机器学习)[深度学习]&lt;/p&gt;
-&lt;h3 id=&quot;感知器（Perceptron）&quot;&gt;&lt;a href=&quot;#感知器（Perceptron）&quot; class=&quot;headerlink&quot; title=&quot;感知器（Perceptron）&quot;&gt;&lt;/a&gt;感知器（Perceptron）&lt;/h3&gt;&lt;p&gt;在人脑中，神经元是用于处理和传递信息的细胞。感知机可以认为是生物神经元的非常简化的版本。&lt;br&gt;感知器可以处理纪录数据，加权处理，给出一路输出。每一路输入的权重取决于对于输出的重要性。&lt;/p&gt;
+    <content type="html">&lt;h3 id=&quot;感知器（Perceptron）&quot;&gt;&lt;a href=&quot;#感知器（Perceptron）&quot; class=&quot;headerlink&quot; title=&quot;感知器（Perceptron）&quot;&gt;&lt;/a&gt;感知器（Perceptron）&lt;/h3&gt;&lt;p&gt;在人脑中，神经元是用于处理和传递信息的细胞。感知机可以认为是生物神经元的非常简化的版本。&lt;br&gt;感知器可以处理纪录数据，加权处理，给出一路输出。每一路输入的权重取决于对于输出的重要性。&lt;/p&gt;
 &lt;h3 id=&quot;人工神经网络（Artificial-Neural-Networks）&quot;&gt;&lt;a href=&quot;#人工神经网络（Artificial-Neural-Networks）&quot; class=&quot;headerlink&quot; title=&quot;人工神经网络（Artificial Neural Networks）&quot;&gt;&lt;/a&gt;人工神经网络（Artificial Neural Networks）&lt;/h3&gt;&lt;p&gt;人工神经网络（ANN）是建模自生物神经网络，比如生物的中央神经系统和人类的大脑。&lt;br&gt;人工神经网络是处理装置，类似于小规模的松散地建模于哺乳动物大脑皮层的算法或者物理硬件。&lt;br&gt;我们可以称呼它为人脑的简单计算模型。&lt;/p&gt;
 &lt;h3 id=&quot;向后传播（Backpropagation）&quot;&gt;&lt;a href=&quot;#向后传播（Backpropagation）&quot; class=&quot;headerlink&quot; title=&quot;向后传播（Backpropagation）&quot;&gt;&lt;/a&gt;向后传播（Backpropagation）&lt;/h3&gt;&lt;p&gt;神经网络模型训练常用的一种算法是向后传播算法。训练神经网络会先给定一组输入，这会产品一定的输出。训练神经网络的第一步是告诉神经网络这样的输入获得这样的输出是正确的，理想的。人工神经网络根据这个理想的输出来调整各项权重，使得下次获得相似输入时可以获得更准确的输出（取决于他们对于整个预测模型的贡献）。&lt;br&gt;整个过程会反复进行直到输入和理想输出间的误差是可以接受的。&lt;/p&gt;
 &lt;h3 id=&quot;卷积神经网络（Convolutional-Neural-Networks）&quot;&gt;&lt;a href=&quot;#卷积神经网络（Convolutional-Neural-Networks）&quot; class=&quot;headerlink&quot; title=&quot;卷积神经网络（Convolutional Neural Networks）&quot;&gt;&lt;/a&gt;卷积神经网络（Convolutional Neural Networks）&lt;/h3&gt;&lt;p&gt;卷积神经网络可以被认为是由大量相同神经元复制得到的神经网络。这使得网络只需要学习一个神经元一次，就可以在许多地方应用，简化了模型训练过程，并减少了误差。所以卷积神经网络在特别适合应用于物体识别和图像标注。&lt;br&gt;卷积神经网络不断学习输入的卷积抽象表达。在以下这个物体识别例子中，卷积神经网络从学习像素数据开始，然后学习可区分的特征，比如边缘，基本形状，复杂形状，模式和纹理。&lt;br&gt;&lt;img src=&quot;/images/10DLT-CNN.jpg “来自: http://stats.stackexchange.com/questions/146413”&quot; alt=&quot;CNN&quot;&gt;&lt;/p&gt;
@@ -58,8 +57,7 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;十个深度学习概念&quot;&gt;&lt;a href=&quot;#十个深度学习概念&quot; class=&quot;headerlink&quot; title=&quot;十个深度学习概念&quot;&gt;&lt;/a&gt;十个深度学习概念&lt;/h1&gt;&lt;p&gt;@(机器学习)[深度学习]&lt;/p&gt;
-&lt;h3 id=&quot;感知器（Perceptron）&quot;&gt;&lt;a 
+      &lt;h3 id=&quot;感知器（Perceptron）&quot;&gt;&lt;a href=&quot;#感知器（Perceptron）&quot; class=&quot;headerlink&quot; title=&quot;感知器（Perceptron）&quot;&gt;&lt;/a&gt;感知器（Perceptron）&lt;/h3&gt;&lt;p&gt;在人脑中，神经元是用于处理和传递信息
     
     </summary>
     
