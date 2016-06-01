@@ -1,94 +1,12 @@
-<!doctype html>
-
-
-
-  
-
-
-<html class="theme-next muse use-motion">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-
-
-
-
-
-
-
-
-
-
+  <meta charset="utf-8">
   
-  
-  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
-
-
-
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
-
-
-
-
-
-
-<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
-
-
-  <meta name="keywords" content="机器学习 深度学习," />
-
-
-
-
-  
-
-
-  <link rel="alternate" href="/atom.xml" title="Today is a new day" type="application/atom+xml" />
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
-
-
-
-
-
-
-<meta name="description" content="&amp;#x611F;&amp;#x77E5;&amp;#x5668;&amp;#xFF08;Perceptron&amp;#xFF09;&amp;#x5728;&amp;#x4EBA;&amp;#x8111;&amp;#x4E2D;&amp;#xFF0C;&amp;#x795E;&amp;#x7ECF;&amp;#x5143;&amp;#x662F;&amp;#x7528;&amp;#x4E8E;&amp;#x5904;&amp;#x7406;&amp;#x548C;&amp;#x4F20;&amp;#x9012;&amp;#x4FE1;&amp;#x606F;&amp;#x768">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>十个深度学习概念浅析 | Today is a new day</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="&amp;#x611F;&amp;#x77E5;&amp;#x5668;&amp;#xFF08;Perceptron&amp;#xFF09;&amp;#x5728;&amp;#x4EBA;&amp;#x8111;&amp;#x4E2D;&amp;#xFF0C;&amp;#x795E;&amp;#x7ECF;&amp;#x5143;&amp;#x662F;&amp;#x7528;&amp;#x4E8E;&amp;#x5904;&amp;#x7406;&amp;#x548C;&amp;#x4F20;&amp;#x9012;&amp;#x4FE1;&amp;#x606F;&amp;#x768">
 <meta property="og:type" content="article">
 <meta property="og:title" content="十个深度学习概念浅析">
 <meta property="og:url" content="http://yoursite.com/2016/05/30/10DeepLearningTems/index.html">
@@ -97,207 +15,232 @@
 <meta property="og:image" content="http://yoursite.com/2016/05/30/10DeepLearningTems/10DLT-CNN.png">
 <meta property="og:image" content="http://yoursite.com/2016/05/30/10DeepLearningTems/10DLT-RNN.png">
 <meta property="og:image" content="http://yoursite.com/2016/05/30/10DeepLearningTems/10DLT-WE.png">
-<meta property="og:updated_time" content="2016-05-30T05:21:28.189Z">
+<meta property="og:updated_time" content="2016-06-01T03:42:56.062Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="十个深度学习概念浅析">
 <meta name="twitter:description" content="&amp;#x611F;&amp;#x77E5;&amp;#x5668;&amp;#xFF08;Perceptron&amp;#xFF09;&amp;#x5728;&amp;#x4EBA;&amp;#x8111;&amp;#x4E2D;&amp;#xFF0C;&amp;#x795E;&amp;#x7ECF;&amp;#x5143;&amp;#x662F;&amp;#x7528;&amp;#x4E8E;&amp;#x5904;&amp;#x7406;&amp;#x548C;&amp;#x4F20;&amp;#x9012;&amp;#x4FE1;&amp;#x606F;&amp;#x768">
 <meta name="twitter:image" content="http://yoursite.com/2016/05/30/10DeepLearningTems/10DLT-CNN.png">
-
-
-
-<script type="text/javascript" id="hexo.configuration">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    scheme: 'Muse',
-    sidebar: {"position":"left","display":"post"},
-    fancybox: true,
-    motion: true,
-    duoshuo: {
-      userId: 0,
-      author: '博主'
-    }
-  };
-</script>
-
-  <title> 十个深度学习概念浅析 | Today is a new day </title>
+  
+    <link rel="alternative" href="/atom.xml" title="Today is a new day" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="/images/avatar.jpg" class="js-avatar">
+			
+		</a>
 
-  
+		<hgroup>
+		  <h1 class="header-author"><a href="/">Carrot</a></h1>
+		</hgroup>
 
+		
+		<p class="header-subtitle">小智慧，大收获</p>
+		
 
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+						<li>关于我</li>
+						
+					</ul>
+				</div>
+			</div>
+		
 
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="#" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="#" title="rss">rss</a>
+					        
+								<a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/机器学习/" style="font-size: 10px;">机器学习</a> <a href="/tags/深度学习/" style="font-size: 10px;">深度学习</a>
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">奥巴马的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">卡卡的美丽传说</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">本泽马的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">吉格斯的博客</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">习大大大不同</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">托蒂的博客</a>
+			        
+			        </div>
+				</section>
+				
 
-
-
-
-
-
-
-  
-  
-    
-  
-
-  <div class="container one-collumn sidebar-position-left page-post-detail ">
-    <div class="headband"></div>
-
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-meta ">
-  
-
-  <div class="custom-logo-site-title">
-    <a href="/"  class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <span class="site-title">Today is a new day</span>
-      <span class="logo-line-after"><i></i></span>
-    </a>
-  </div>
-  <p class="site-subtitle">Carrot's Tech Blog</p>
+				
+				
+				<section class="switch-part switch-part4">
+				
+					<div id="js-aboutme">我是谁，我从哪里来，我到哪里去？我就是我，是颜色不一样的吃货…</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
 </div>
 
-<div class="site-nav-toggle">
-  <button>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-  </button>
-</div>
-
-<nav class="site-nav">
-  
-
-  
-    <ul id="menu" class="menu">
-      
-        
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            首页
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-categories">
-          <a href="/categories" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            分类
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/about" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            关于
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            归档
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            标签
-          </a>
-        </li>
-      
-
-      
-    </ul>
-  
-
-  
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">Carrot</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img lazy-src="/images/avatar.jpg" class="js-avatar">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">Carrot</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">小智慧，大收获</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="#" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="#" title="rss">rss</a>
+			        
+						<a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
 </nav>
 
- </div>
-    </header>
-
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content">
-            
-
-  <div id="posts" class="posts-expand">
+      <div class="body-wrap"><article id="post-10DeepLearningTems" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/05/30/10DeepLearningTems/" class="article-date">
+  	<time datetime="2016-05-30T03:58:27.000Z" itemprop="datePublished">2016-05-30</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
     
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
+      <input type="hidden" class="isFancy" />
     
-      <header class="post-header">
-
+    
+      <header class="article-header">
         
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                十个深度学习概念浅析
-              
-            
-          </h1>
-        
+  
+    <h1 class="article-title" itemprop="name">
+      十个深度学习概念浅析
+    </h1>
+  
 
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-05-30T11:58:27+08:00" content="2016-05-30">
-              2016-05-30
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
       </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/机器学习/">机器学习</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/深度学习/">深度学习</a></li></ul>
+	</div>
+
+        
+
+        <div class="clearfix"></div>
+      </div>
+      
     
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
+    <div class="article-entry" itemprop="articleBody">
       
         <h3 id="&#x611F;&#x77E5;&#x5668;&#xFF08;Perceptron&#xFF09;"><a href="#&#x611F;&#x77E5;&#x5668;&#xFF08;Perceptron&#xFF09;" class="headerlink" title="&#x611F;&#x77E5;&#x5668;&#xFF08;Perceptron&#xFF09;"></a>&#x611F;&#x77E5;&#x5668;&#xFF08;Perceptron&#xFF09;</h3><p>&#x5728;&#x4EBA;&#x8111;&#x4E2D;&#xFF0C;&#x795E;&#x7ECF;&#x5143;&#x662F;&#x7528;&#x4E8E;&#x5904;&#x7406;&#x548C;&#x4F20;&#x9012;&#x4FE1;&#x606F;&#x7684;&#x7EC6;&#x80DE;&#x3002;&#x611F;&#x77E5;&#x673A;&#x53EF;&#x4EE5;&#x8BA4;&#x4E3A;&#x662F;&#x751F;&#x7269;&#x795E;&#x7ECF;&#x5143;&#x7684;&#x975E;&#x5E38;&#x7B80;&#x5316;&#x7684;&#x7248;&#x672C;&#x3002;<br>&#x611F;&#x77E5;&#x5668;&#x53EF;&#x4EE5;&#x5904;&#x7406;&#x7EAA;&#x5F55;&#x6570;&#x636E;&#xFF0C;&#x52A0;&#x6743;&#x5904;&#x7406;&#xFF0C;&#x7ED9;&#x51FA;&#x4E00;&#x8DEF;&#x8F93;&#x51FA;&#x3002;&#x6BCF;&#x4E00;&#x8DEF;&#x8F93;&#x5165;&#x7684;&#x6743;&#x91CD;&#x53D6;&#x51B3;&#x4E8E;&#x5BF9;&#x4E8E;&#x8F93;&#x51FA;&#x7684;&#x91CD;&#x8981;&#x6027;&#x3002;</p>
 <h3 id="&#x4EBA;&#x5DE5;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;&#xFF08;Artificial-Neural-Networks&#xFF09;"><a href="#&#x4EBA;&#x5DE5;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;&#xFF08;Artificial-Neural-Networks&#xFF09;" class="headerlink" title="&#x4EBA;&#x5DE5;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;&#xFF08;Artificial Neural Networks&#xFF09;"></a>&#x4EBA;&#x5DE5;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;&#xFF08;Artificial Neural Networks&#xFF09;</h3><p>&#x4EBA;&#x5DE5;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;&#xFF08;ANN&#xFF09;&#x662F;&#x5EFA;&#x6A21;&#x81EA;&#x751F;&#x7269;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;&#xFF0C;&#x6BD4;&#x5982;&#x751F;&#x7269;&#x7684;&#x4E2D;&#x592E;&#x795E;&#x7ECF;&#x7CFB;&#x7EDF;&#x548C;&#x4EBA;&#x7C7B;&#x7684;&#x5927;&#x8111;&#x3002;<br>&#x4EBA;&#x5DE5;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;&#x662F;&#x5904;&#x7406;&#x88C5;&#x7F6E;&#xFF0C;&#x7C7B;&#x4F3C;&#x4E8E;&#x5C0F;&#x89C4;&#x6A21;&#x7684;&#x677E;&#x6563;&#x5730;&#x5EFA;&#x6A21;&#x4E8E;&#x54FA;&#x4E73;&#x52A8;&#x7269;&#x5927;&#x8111;&#x76AE;&#x5C42;&#x7684;&#x7B97;&#x6CD5;&#x6216;&#x8005;&#x7269;&#x7406;&#x786C;&#x4EF6;&#x3002;<br>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x79F0;&#x547C;&#x5B83;&#x4E3A;&#x4EBA;&#x8111;&#x7684;&#x7B80;&#x5355;&#x8BA1;&#x7B97;&#x6A21;&#x578B;&#x3002;</p>
@@ -308,287 +251,97 @@
 <h3 id="&#x76D1;&#x7763;&#x5B66;&#x4E60;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;-&#xFF08;Supervised-Neural-Network&#xFF09;"><a href="#&#x76D1;&#x7763;&#x5B66;&#x4E60;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;-&#xFF08;Supervised-Neural-Network&#xFF09;" class="headerlink" title="&#x76D1;&#x7763;&#x5B66;&#x4E60;&#x795E;&#x7ECF;&#x7F51;&#x7EDC; &#xFF08;Supervised Neural Network&#xFF09;"></a>&#x76D1;&#x7763;&#x5B66;&#x4E60;&#x795E;&#x7ECF;&#x7F51;&#x7EDC; &#xFF08;Supervised Neural Network&#xFF09;</h3><p>&#x76D1;&#x7763;&#x5B66;&#x4E60;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;&#x60F3;&#x8981;&#x83B7;&#x5F97;&#x4E00;&#x4E2A;&#x7406;&#x60F3;&#x7684;&#x8F93;&#x51FA;&#xFF0C;&#x5FC5;&#x987B;&#x4E4B;&#x524D;&#x6709;&#x7ED9;&#x5B9A;&#x4E00;&#x4E2A;&#x51C6;&#x786E;&#x7684;&#x8F93;&#x51FA;&#x3002;&#x201C;&#x8BAD;&#x7EC3;&#x201D;&#x662F;&#x57FA;&#x4E8E;&#x4E00;&#x4E2A;&#x4E8B;&#x5148;&#x5B9A;&#x4E49;&#x7684;&#x6570;&#x636E;&#x96C6;&#x5408;&#xFF0C;&#x57FA;&#x4E8E;&#x8FD9;&#x4E2A;&#x6570;&#x636E;&#x96C6;&#x5408;&#xFF0C;&#x5728;&#x7ED9;&#x5B9A;&#x8F93;&#x5165;&#x65F6;&#x4EA7;&#x751F;&#x51C6;&#x786E;&#x7684;&#x8F93;&#x51FA;&#x3002;&#x6240;&#x4EE5;&#x76D1;&#x7763;&#x5B66;&#x4E60;&#x7C7B;&#x4F3C;&#x4E8E;&#x5DF2;&#x7ECF;&#x7ED9;&#x51FA;&#x4E86;&#x95EE;&#x9898;&#x548C;&#x7406;&#x60F3;&#x56DE;&#x7B54;&#x7684;&#x5B66;&#x4E60;&#x3002;</p>
 <h3 id="&#x65E0;&#x76D1;&#x7763;&#x5B66;&#x4E60;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;-&#xFF08;Unsupervised-Neural-Network&#xFF09;"><a href="#&#x65E0;&#x76D1;&#x7763;&#x5B66;&#x4E60;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;-&#xFF08;Unsupervised-Neural-Network&#xFF09;" class="headerlink" title="&#x65E0;&#x76D1;&#x7763;&#x5B66;&#x4E60;&#x795E;&#x7ECF;&#x7F51;&#x7EDC; &#xFF08;Unsupervised Neural Network&#xFF09;"></a>&#x65E0;&#x76D1;&#x7763;&#x5B66;&#x4E60;&#x795E;&#x7ECF;&#x7F51;&#x7EDC; &#xFF08;Unsupervised Neural Network&#xFF09;</h3><p>&#x65E0;&#x76D1;&#x7763;&#x5B66;&#x4E60;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x7A0B;&#x5E8F;&#x6216;&#x8005;&#x673A;&#x5236;&#xFF0C;&#x53EF;&#x4EE5;&#x81EA;&#x52A8;&#x5728;&#x4E00;&#x4E2A;&#x4E8B;&#x5148;&#x6CA1;&#x6709;&#x8BAD;&#x7EC3;&#x8FC7;&#x7684;&#x6CA1;&#x6709;&#x6807;&#x8BB0;&#x8FC7;&#x7684;&#x6570;&#x636E;&#x96C6;&#x5408;&#x4E2D;&#x8FD0;&#x7528;&#x805A;&#x7C7B;&#x7B97;&#x6CD5;&#x81EA;&#x52A8;&#x53D1;&#x73B0;&#x6A21;&#x5F0F;&#x548C;&#x503E;&#x5411;&#x3002;</p>
 <h3 id="&#x68AF;&#x5EA6;&#x4E0B;&#x964D;&#xFF08;Gradient-Descent&#xFF09;"><a href="#&#x68AF;&#x5EA6;&#x4E0B;&#x964D;&#xFF08;Gradient-Descent&#xFF09;" class="headerlink" title="&#x68AF;&#x5EA6;&#x4E0B;&#x964D;&#xFF08;Gradient Descent&#xFF09;"></a>&#x68AF;&#x5EA6;&#x4E0B;&#x964D;&#xFF08;Gradient Descent&#xFF09;</h3><p>&#x68AF;&#x5EA6;&#x4E0B;&#x964D;&#x6CD5;&#x662F;&#x5BFB;&#x627E;&#x51FD;&#x6570;&#x5C40;&#x90E8;&#x6700;&#x5C0F;&#x503C;&#x7684;&#x7B97;&#x6CD5;&#x3002;&#x7B97;&#x6CD5;&#x5148;&#x731C;&#x6D4B;&#x4E00;&#x4E2A;&#x5C40;&#x90E8;&#x6700;&#x5C0F;&#x503C;&#x7684;&#x70B9;&#xFF0C;&#x8BA1;&#x7B97;&#x68AF;&#x5EA6;&#xFF0C;&#x5E76;&#x6CBF;&#x7740;&#x68AF;&#x5EA6;&#x8D1F;&#x65B9;&#x5411;&#x53CD;&#x590D;&#x4F7F;&#x7528;&#x68AF;&#x5EA6;&#x7B97;&#x6CD5;&#x76F4;&#x5230;&#x627E;&#x5230;&#x5C40;&#x90E8;&#x6700;&#x5C0F;&#x503C;&#xFF0C;&#x5373;&#x7B97;&#x6CD5;&#x6700;&#x7EC8;&#x6536;&#x655B;&#x4E8E;&#x68AF;&#x5EA6;&#x4E3A;0&#x7684;&#x70B9;&#x3002;&#x6211;&#x4EEC;&#x5176;&#x5B9E;&#x662F;&#x5728;&#x6CBF;&#x7740;&#x8BEF;&#x5DEE;&#x8868;&#x9762;&#x4E0B;&#x964D;&#xFF0C;&#x76F4;&#x5230;&#x5230;&#x8FBE;&#x8C37;&#x5E95;&#x3002;</p>
-<h3 id="&#x5B57;&#x5D4C;&#x5165;&#xFF08;Word-Embedding&#xFF09;"><a href="#&#x5B57;&#x5D4C;&#x5165;&#xFF08;Word-Embedding&#xFF09;" class="headerlink" title="&#x5B57;&#x5D4C;&#x5165;&#xFF08;Word Embedding&#xFF09;"></a>&#x5B57;&#x5D4C;&#x5165;&#xFF08;Word Embedding&#xFF09;</h3><p>&#x5C31;&#x50CF;&#x4E00;&#x5E45;&#x753B;&#x4F5C;&#x53EF;&#x4EE5;&#x4EE3;&#x8868;&#x4E00;&#x4E2A;&#x4EBA;&#xFF0C;&#x5B57;&#x5D4C;&#x5165;&#x662F;&#x4E00;&#x4E2A;&#x5355;&#x8BCD;&#x7684;&#x6570;&#x5B57;&#x8868;&#x5F81;&#x3002;&#x5B57;&#x5D4C;&#x5165;&#x7ECF;&#x8FC7;&#x8BAD;&#x7EC3;&#xFF0C;&#x7528;&#x6765;&#x8BA1;&#x7B97;&#x5355;&#x8BCD;&#x95F4;&#x7684;&#x76F8;&#x4F3C;&#x5EA6;&#x3002;&#x662F;&#x8BA1;&#x7B97;&#x673A;&#x80FD;&#x591F;&#x7406;&#x89E3;&#x7684;&#x5355;&#x8BCD;&#x7684;&#x8BED;&#x4E49;&#x548C;&#x8BED;&#x6CD5;&#x7684;&#x6570;&#x5B57;&#x8868;&#x8FBE;&#x3002;<br>&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x4E2D;&#x521B;&#x5EFA;&#x7684;&#x5355;&#x8BCD;&#x5411;&#x91CF;&#x80FD;&#x83B7;&#x5F97;&#x770B;&#x8D77;&#x6765;&#x611F;&#x89C9;&#x5F88;&#x795E;&#x5947;&#x7684;&#x7279;&#x5F81;&#xFF0C;&#x6BD4;&#x5982;&#xFF0C;&#x4ECE;&#x201C;&#x56FD;&#x738B;&#x201D;&#x7684;&#x5411;&#x91CF;&#x4E2D;&#x51CF;&#x53BB;&#x201C;&#x7537;&#x4EBA;&#x201D;&#x7684;&#x5411;&#x91CF;&#x7684;&#x7ED3;&#x679C;&#x4F1A;&#x8FD1;&#x4F3C;&#x76F8;&#x7B49;&#x4E8E;&#x201C;&#x738B;&#x540E;&#x201D;&#x4E2D;&#x51CF;&#x53BB;&#x201C;&#x5973;&#x4EBA;&#x201D;&#x3002;&#x66F4;&#x6709;&#x610F;&#x601D;&#x7684;&#x662F;&#xFF0C;&#x8DD1;&#x51CF;&#x53BB;&#x6B63;&#x5728;&#x8DD1;&#x548C;&#x770B;&#x51CF;&#x53BB;&#x6B63;&#x5728;&#x770B;&#x7684;&#x503C;&#x8FD1;&#x4F3C;&#x3002;&#x8FD9;&#x5353;&#x660E;&#x6A21;&#x578B;&#x4E0D;&#x4EC5;&#x5B66;&#x4E60;&#x4E86;&#x5355;&#x8BCD;&#x7684;&#x610F;&#x601D;&#x548C;&#x8BED;&#x4E49;&#xFF0C;&#x8FD8;&#x5B66;&#x4E60;&#x4E86;&#x4E00;&#x5B9A;&#x7A0B;&#x5EA6;&#x7684;&#x53E5;&#x6CD5;&#x548C;&#x8BED;&#x6CD5;&#x3002;<br><img src="/2016/05/30/10DeepLearningTems/10DLT-WE.png" alt="10DLT-WE"></p>
+<h3 id="&#x8BCD;&#x5411;&#x91CF;&#xFF08;Word-Embedding&#xFF09;"><a href="#&#x8BCD;&#x5411;&#x91CF;&#xFF08;Word-Embedding&#xFF09;" class="headerlink" title="&#x8BCD;&#x5411;&#x91CF;&#xFF08;Word Embedding&#xFF09;"></a>&#x8BCD;&#x5411;&#x91CF;&#xFF08;Word Embedding&#xFF09;</h3><p>&#x5C31;&#x50CF;&#x4E00;&#x5E45;&#x753B;&#x4F5C;&#x53EF;&#x4EE5;&#x4EE3;&#x8868;&#x4E00;&#x4E2A;&#x4EBA;&#xFF0C;&#x8BCD;&#x5411;&#x91CF;&#x662F;&#x4E00;&#x4E2A;&#x5355;&#x8BCD;&#x7684;&#x6570;&#x5B57;&#x8868;&#x5F81;&#x3002;&#x8BCD;&#x5411;&#x91CF;&#x7ECF;&#x8FC7;&#x8BAD;&#x7EC3;&#xFF0C;&#x7528;&#x6765;&#x8BA1;&#x7B97;&#x5355;&#x8BCD;&#x95F4;&#x7684;&#x76F8;&#x4F3C;&#x5EA6;&#x3002;&#x662F;&#x8BA1;&#x7B97;&#x673A;&#x80FD;&#x591F;&#x7406;&#x89E3;&#x7684;&#x5355;&#x8BCD;&#x7684;&#x8BED;&#x4E49;&#x548C;&#x8BED;&#x6CD5;&#x7684;&#x6570;&#x5B57;&#x8868;&#x8FBE;&#x3002;<br>&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x4E2D;&#x521B;&#x5EFA;&#x7684;&#x5355;&#x8BCD;&#x5411;&#x91CF;&#x80FD;&#x83B7;&#x5F97;&#x770B;&#x8D77;&#x6765;&#x611F;&#x89C9;&#x5F88;&#x795E;&#x5947;&#x7684;&#x7279;&#x5F81;&#xFF0C;&#x6BD4;&#x5982;&#xFF0C;&#x4ECE;&#x201C;&#x56FD;&#x738B;&#x201D;&#x7684;&#x5411;&#x91CF;&#x4E2D;&#x51CF;&#x53BB;&#x201C;&#x7537;&#x4EBA;&#x201D;&#x7684;&#x5411;&#x91CF;&#x7684;&#x7ED3;&#x679C;&#x4F1A;&#x8FD1;&#x4F3C;&#x76F8;&#x7B49;&#x4E8E;&#x201C;&#x738B;&#x540E;&#x201D;&#x4E2D;&#x51CF;&#x53BB;&#x201C;&#x5973;&#x4EBA;&#x201D;&#x3002;&#x66F4;&#x6709;&#x610F;&#x601D;&#x7684;&#x662F;&#xFF0C;&#x8DD1;&#x51CF;&#x53BB;&#x6B63;&#x5728;&#x8DD1;&#x548C;&#x770B;&#x51CF;&#x53BB;&#x6B63;&#x5728;&#x770B;&#x7684;&#x503C;&#x8FD1;&#x4F3C;&#x3002;&#x8FD9;&#x5353;&#x660E;&#x6A21;&#x578B;&#x4E0D;&#x4EC5;&#x5B66;&#x4E60;&#x4E86;&#x5355;&#x8BCD;&#x7684;&#x610F;&#x601D;&#x548C;&#x8BED;&#x4E49;&#xFF0C;&#x8FD8;&#x5B66;&#x4E60;&#x4E86;&#x4E00;&#x5B9A;&#x7A0B;&#x5EA6;&#x7684;&#x53E5;&#x6CD5;&#x548C;&#x8BED;&#x6CD5;&#x3002;<br><img src="/2016/05/30/10DeepLearningTems/10DLT-WE.png" alt="10DLT-WE"></p>
 <blockquote>
 <p>&#x7FFB;&#x8BD1;&#x81EA;&#xFF1A;<a href="http://www.datasciencecentral.com/profiles/blogs/10-deep-learning-terms-explained-in-simple-english" target="_blank" rel="external">http://www.datasciencecentral.com/profiles/blogs/10-deep-learning-terms-explained-in-simple-english</a></p>
 </blockquote>
 
       
     </div>
-
-    <div>
-      
-        
-      
-    </div>
-
-    <div>
-      
-        
-
-      
-    </div>
-
-    <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/机器学习-深度学习/" rel="tag">#机器学习 深度学习</a>
-          
-        </div>
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2016/05/11/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
-              </a>
-            
-          </div>
-
-          <div class="post-nav-prev post-nav-item">
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </article>
-
-
-
-    <div class="post-spread">
-      
-    </div>
-  </div>
-
-
-          </div>
-          
-
-
-          
-  <div class="comments" id="comments">
     
   </div>
-
-
-        </div>
-        
-          
   
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/05/11/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 Carrot
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
     </div>
   </div>
-
-  <aside id="sidebar" class="sidebar">
-    <div class="sidebar-inner">
-
-      
-
-      
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
-            站点概览
-          </li>
-        </ul>
-      
-
-      <section class="site-overview sidebar-panel ">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="/images/avatar.jpg"
-               alt="carrot" />
-          <p class="site-author-name" itemprop="name">carrot</p>
-          <p class="site-description motion-element" itemprop="description">小智慧，大收获</p>
-        </div>
-        <nav class="site-state motion-element">
-          <div class="site-state-item site-state-posts">
-            <a href="/archives">
-              <span class="site-state-item-count">2</span>
-              <span class="site-state-item-name">日志</span>
-            </a>
-          </div>
-
-          
-
-          
-            <div class="site-state-item site-state-tags">
-              <a href="/tags">
-                <span class="site-state-item-count">1</span>
-                <span class="site-state-item-name">标签</span>
-              </a>
-            </div>
-          
-
-        </nav>
-
-        
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
-          </div>
-        
-
-        <div class="links-of-author motion-element">
-          
-        </div>
-
-        
-        
-
-        
-        
-
-      </section>
-
-      
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-            
-              
-            
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#感知器（Perceptron）"><span class="nav-number">1.</span> <span class="nav-text">感知器（Perceptron）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#人工神经网络（Artificial-Neural-Networks）"><span class="nav-number">2.</span> <span class="nav-text">人工神经网络（Artificial Neural Networks）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#向后传播（Backpropagation）"><span class="nav-number">3.</span> <span class="nav-text">向后传播（Backpropagation）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#卷积神经网络（Convolutional-Neural-Networks）"><span class="nav-number">4.</span> <span class="nav-text">卷积神经网络（Convolutional Neural Networks）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#时间递归神经网络（Recurrent-Neural-Network）"><span class="nav-number">5.</span> <span class="nav-text">时间递归神经网络（Recurrent Neural Network）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#结构递归神经网络（Recursive-Neural-Network）"><span class="nav-number">6.</span> <span class="nav-text">结构递归神经网络（Recursive Neural Network）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#监督学习神经网络-（Supervised-Neural-Network）"><span class="nav-number">7.</span> <span class="nav-text">监督学习神经网络 （Supervised Neural Network）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#无监督学习神经网络-（Unsupervised-Neural-Network）"><span class="nav-number">8.</span> <span class="nav-text">无监督学习神经网络 （Unsupervised Neural Network）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#梯度下降（Gradient-Descent）"><span class="nav-number">9.</span> <span class="nav-text">梯度下降（Gradient Descent）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字嵌入（Word-Embedding）"><span class="nav-number">10.</span> <span class="nav-text">字嵌入（Word Embedding）</span></a></li></ol></div>
-            
-          </div>
-        </section>
-      
-
+</footer>
     </div>
-  </aside>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
 
 
-        
-      </div>
-    </main>
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
 
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy; 
-  <span itemprop="copyrightYear">2016</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">carrot</span>
-</div>
 
-<div class="powered-by">
-  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
-</div>
 
-<div class="theme-info">
-  主题 -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Muse
-  </a>
-</div>
 
-        
 
-        
-      </div>
-    </footer>
 
-    <div class="back-to-top">
-      <i class="fa fa-arrow-up"></i>
-    </div>
-  </div>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
 
-  
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
 
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 
 
-
-
-
-
-
-
-
-  
-
-
-
-  
-  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
-
-  
-  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
-
-
-
-  
-  
-
-  
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
-
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
-
-
-
-  
-
-
-
-  
-
-
-
-  
-  
-  
-
-  
-
-  
-
+  </div>
 </body>
 </html>
