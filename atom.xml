@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-08-18T03:26:32.312Z</updated>
+  <updated>2016-09-22T06:42:33.331Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,42 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>IntellJ中开发的第一个Jersey+Tomcat</title>
+    <link href="http://yoursite.com/2016/09/22/jersey-tomcat-intellij/"/>
+    <id>http://yoursite.com/2016/09/22/jersey-tomcat-intellij/</id>
+    <published>2016-09-22T03:41:42.000Z</published>
+    <updated>2016-09-22T06:42:33.331Z</updated>
+    
+    <content type="html">&lt;p&gt;&amp;#x6253;&amp;#x7B97;&amp;#x7528;Jersey&amp;#x6765;&amp;#x5F00;&amp;#x53D1;&amp;#x4E00;&amp;#x4E2A;&amp;#x8F7B;&amp;#x91CF;&amp;#x7EA7;&amp;#x7684;RESTful web app&amp;#x3002;&lt;/p&gt;
+&lt;p&gt;&amp;#x501F;&amp;#x7528;&amp;#x7F51;&amp;#x4E0A;&amp;#x8FD9;&amp;#x4E2A;&amp;#x4F8B;&amp;#x5B50;&amp;#x6765;&amp;#x5B66;&amp;#x4E60;IntelliJ&amp;#x4E0A;&amp;#x4F7F;&amp;#x7528;Tomcat&amp;#x548C;Jersey&amp;#xFF1A;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;http://blog.csdn.net/felcon/article/details/51832146&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.csdn.net/felcon/article/details/51832146&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;&amp;#x51C6;&amp;#x5907;&amp;#x5DE5;&amp;#x4F5C;&quot;&gt;&lt;a href=&quot;#&amp;#x51C6;&amp;#x5907;&amp;#x5DE5;&amp;#x4F5C;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x51C6;&amp;#x5907;&amp;#x5DE5;&amp;#x4F5C;&quot;&gt;&lt;/a&gt;&amp;#x51C6;&amp;#x5907;&amp;#x5DE5;&amp;#x4F5C;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;IntelliJ IDEA&amp;#xFF1A;&amp;#x4E0B;&amp;#x8F7D;&lt;a href=&quot;https://www.jetbrains.com/idea/download/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Ultimate&amp;#x7248;&amp;#x672C;&lt;/a&gt;&amp;#x3002;Windows&amp;#x7248;&amp;#x672C;&amp;#x76F4;&amp;#x63A5;&amp;#x70B9;&amp;#x51FB;&amp;#x5B89;&amp;#x88C5;&amp;#x3002;&lt;/li&gt;
+&lt;li&gt;Tomcat&amp;#xFF1A;&amp;#x4E0B;&amp;#x8F7D;&lt;a href=&quot;http://tomcat.apache.org/download-80.cgi&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Tomcat 8.0&lt;/a&gt; &amp;#xFF0C;zip&amp;#x5305;&amp;#x89E3;&amp;#x538B;&amp;#x3002;&lt;/li&gt;
+&lt;li&gt;Maven&amp;#xFF1A;&amp;#x4E0B;&amp;#x8F7D;&lt;a href=&quot;http://maven.apache.org/download.cgi&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Maven&lt;/a&gt;&amp;#xFF0C;zip&amp;#x5305;&amp;#x89E3;&amp;#x538B;&amp;#xFF0C;&amp;#x914D;&amp;#x7F6E;&amp;#x73AF;&amp;#x5883;&amp;#x53D8;&amp;#x91CF;&amp;#x3002;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;&amp;#x521B;&amp;#x5EFA;&amp;#x5DE5;&amp;#x7A0B;&quot;&gt;&lt;a href=&quot;#&amp;#x521B;&amp;#x5EFA;&amp;#x5DE5;&amp;#x7A0B;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x521B;&amp;#x5EFA;&amp;#x5DE5;&amp;#x7A0B;&quot;&gt;&lt;/a&gt;&amp;#x521B;&amp;#x5EFA;&amp;#x5DE5;&amp;#x7A0B;&lt;/h3&gt;&lt;p&gt;&amp;#x4F8B;&amp;#x5B50;&amp;#x662F;&amp;#x4ECE;&amp;#x5EFA;&amp;#x7ACB;&amp;#x4E86;&amp;#x4E00;&amp;#x4E2A;Restful web service&amp;#x5F00;&amp;#x59CB;&amp;#x7684;&amp;#xFF0C;&amp;#x7136;&amp;#x540E;&amp;#x6DFB;&amp;#x52A0;&amp;#x7684;Web app&amp;#x670D;&amp;#x52A1;&amp;#x548C;Maven&amp;#x3002;Maven&amp;#x4E2D;&amp;#x52A0;&amp;#x4E0A;Jersey&amp;#x4F9D;&amp;#x8D56;&amp;#x8FD9;&amp;#x6837;&amp;#x6765;&amp;#x642D;&amp;#x5EFA;&amp;#x73AF;&amp;#x5883;&amp;#x3002;&amp;#x56E0;&amp;#x4E3A;Maven&amp;#x4F1A;&amp;#x4E0B;&amp;#x8F7D;&amp;#x6240;&amp;#x6709;Jersey&amp;#x9700;&amp;#x8981;&amp;#x7684;lib&amp;#xFF0C;&amp;#x4E8B;&amp;#x5148;&amp;#x521B;&amp;#x5EFA;Restful web service&amp;#x800C;&amp;#x5F15;&amp;#x5165;Jersey&amp;#x7C7B;&amp;#x6709;&amp;#x70B9;&amp;#x591A;&amp;#x6B64;&amp;#x4E00;&amp;#x4E3E;&amp;#x3002;&amp;#x56E0;&amp;#x6B64;&amp;#x6211;&amp;#x662F;&amp;#x4ECE;&amp;#x5EFA;&amp;#x7ACB;Web Application&amp;#x5F00;&amp;#x59CB;&amp;#x7684;&amp;#x3002;&lt;br&gt;&lt;img src=&quot;/2016/09/22/jersey-tomcat-intellij/create_project.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;&amp;#x6DFB;&amp;#x52A0;&amp;#x4F9D;&amp;#x8D56;&quot;&gt;&lt;a href=&quot;#&amp;#x6DFB;&amp;#x52A0;&amp;#x4F9D;&amp;#x8D56;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x6DFB;&amp;#x52A0;&amp;#x4F9D;&amp;#x8D56;&quot;&gt;&lt;/a&gt;&amp;#x6DFB;&amp;#x52A0;&amp;#x4F9D;&amp;#x8D56;&lt;/h3&gt;&lt;p&gt;&amp;#x5DE5;&amp;#x7A0B;&amp;#x521B;&amp;#x5EFA;&amp;#x540E;&amp;#xFF0C;&amp;#x53F3;&amp;#x952E;Add Frameworks Support&amp;#xFF0C;&amp;#x6DFB;&amp;#x52A0;Maven&amp;#x3002;&amp;#x4FEE;&amp;#x6539;&amp;#x2018;groupId&amp;#x2019;&lt;br&gt;&amp;#x5728;pom.xml&amp;#x4E2D;&amp;#x6DFB;&amp;#x52A0;&lt;br&gt;&lt;figure class=&quot;highlight xml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;dependencies&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;&amp;lt;!-- https://mvnrepository.com/artifact/org.glassfish.jersey.containers/jersey-container-servlet --&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;dependency&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;groupId&lt;/span&gt;&amp;gt;&lt;/span&gt;org.glassfish.jersey.containers&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;groupId&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;artifactId&lt;/span&gt;&amp;gt;&lt;/span&gt;jersey-container-servlet&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;artifactId&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;version&lt;/span&gt;&amp;gt;&lt;/span&gt;2.23.2&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;version&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;dependency&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;dependencies&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&amp;#x7B2C;&amp;#x4E00;&amp;#x6B21;&amp;#x4E0B;&amp;#x8F7D;&amp;#x6240;&amp;#x6709;&amp;#x4F9D;&amp;#x8D56;&amp;#x7684;lib&amp;#x5305;&amp;#x4F1A;&amp;#x9700;&amp;#x8981;&amp;#x82B1;&amp;#x6BD4;&amp;#x8F83;&amp;#x957F;&amp;#x7684;&amp;#x65F6;&amp;#x95F4;&amp;#x3002;&lt;/p&gt;
+&lt;h3 id=&quot;&amp;#x7F16;&amp;#x8F91;&amp;#x5DE5;&amp;#x7A0B;&quot;&gt;&lt;a href=&quot;#&amp;#x7F16;&amp;#x8F91;&amp;#x5DE5;&amp;#x7A0B;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x7F16;&amp;#x8F91;&amp;#x5DE5;&amp;#x7A0B;&quot;&gt;&lt;/a&gt;&amp;#x7F16;&amp;#x8F91;&amp;#x5DE5;&amp;#x7A0B;&lt;/h3&gt;&lt;p&gt;&amp;#x53C2;&amp;#x7167;&amp;#x4F8B;&amp;#x5B50;&amp;#x6DFB;&amp;#x52A0;java&amp;#x7C7B;&amp;#x548C;&amp;#x4FEE;&amp;#x6539;web.xml&amp;#x5373;&amp;#x53EF;&amp;#xFF0C;&amp;#x6CE8;&amp;#x610F;&amp;#x8981;&amp;#x5728;Project Structure-&amp;gt;Artifacts&amp;#x4E2D;&amp;#x628A;&amp;#x4F9D;&amp;#x8D56;&amp;#x7684;lib&amp;#x90FD;&amp;#x6DFB;&amp;#x52A0;&amp;#x5230;WEB-INF/lib&amp;#x4E0B;&amp;#x3002;&amp;#x8FD0;&amp;#x884C;&amp;#xFF0C;OK~&lt;/p&gt;
+&lt;p&gt;THE END&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&amp;#x6253;&amp;#x7B97;&amp;#x7528;Jersey&amp;#x6765;&amp;#x5F00;&amp;#x53D1;&amp;#x4E00;&amp;#x4E2A;&amp;#x8F7B;&amp;#x91CF;&amp;#x7EA7;&amp;#x7684;RESTful web app&amp;#x3002;&lt;/p&gt;
+&lt;p&gt;&amp;#x5
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
+    
+  </entry>
   
   <entry>
     <title>Sublime远程编辑树莓派文件</title>

@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2016/09/22/jersey-tomcat-intellij/</loc>
+    
+    <lastmod>2016-09-22T06:42:33.331Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2016/08/17/rsbpi3-sublime-remote/</loc>
     
     <lastmod>2016-08-18T03:26:32.312Z</lastmod>
