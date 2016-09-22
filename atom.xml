@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-09-22T06:42:33.331Z</updated>
+  <updated>2016-09-22T06:59:36.337Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>IntellJ中开发的第一个Jersey+Tomcat</title>
+    <title>IntelliJ中开发的第一个Jersey+Tomcat</title>
     <link href="http://yoursite.com/2016/09/22/jersey-tomcat-intellij/"/>
     <id>http://yoursite.com/2016/09/22/jersey-tomcat-intellij/</id>
     <published>2016-09-22T03:41:42.000Z</published>
-    <updated>2016-09-22T06:42:33.331Z</updated>
+    <updated>2016-09-22T06:59:36.337Z</updated>
     
     <content type="html">&lt;p&gt;&amp;#x6253;&amp;#x7B97;&amp;#x7528;Jersey&amp;#x6765;&amp;#x5F00;&amp;#x53D1;&amp;#x4E00;&amp;#x4E2A;&amp;#x8F7B;&amp;#x91CF;&amp;#x7EA7;&amp;#x7684;RESTful web app&amp;#x3002;&lt;/p&gt;
 &lt;p&gt;&amp;#x501F;&amp;#x7528;&amp;#x7F51;&amp;#x4E0A;&amp;#x8FD9;&amp;#x4E2A;&amp;#x4F8B;&amp;#x5B50;&amp;#x6765;&amp;#x5B66;&amp;#x4E60;IntelliJ&amp;#x4E0A;&amp;#x4F7F;&amp;#x7528;Tomcat&amp;#x548C;Jersey&amp;#xFF1A;&lt;/p&gt;
